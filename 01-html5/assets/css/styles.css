@@ -1,0 +1,17 @@
+/*
+    Se que esto no esta en el desafio y que tampoco hace falta.
+    Solo me pase un poco mas.
+*/
+
+td {
+	border: solid 1px green;
+}
+
+header,
+main,
+footer,
+table {
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+}

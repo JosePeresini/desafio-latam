@@ -1,0 +1,83 @@
+.header {
+	background-color: #000;
+	background-image: url("../imgs/ales-nesetril-Im7lZjxeLhg-unsplash\ \(1\).jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 40vh;
+	width: 100%;
+}
+
+.header__h1 {
+	padding: 4em;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 800;
+}
+
+.header__span {
+	font-weight: 600;
+}
+
+.header__h2 {
+	color: #fff;
+	font-size: 1.7em;
+	font-weight: 400;
+	text-align: center;
+}
+
+.main {
+}
+
+.section {
+	margin: 0 auto;
+	min-height: 80vh;
+	max-width: 70%;
+	padding: 2em;
+	width: 100%;
+}
+
+.article {
+	padding: 4em;
+}
+
+.div {
+	float: right;
+	margin-top: 6em;
+	padding: 1em;
+	width: 40%;
+}
+
+.div__h2 {
+	color: #000;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+.div__p {
+	color: #777;
+	font-size: 1.8em;
+	text-align: right;
+}
+
+.article__img {
+	background-color: blue;
+	height: 17em;
+	width: 35%;
+}
+
+.footer {
+	background-color: #000;
+	min-height: 10vh;
+}
+
+.footer__p {
+	font-size: 1.1em;
+	text-align: end;
+	padding: 2em;
+}
+
+.footer__span {
+	font-weight: 600;
+}

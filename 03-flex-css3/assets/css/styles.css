@@ -51,7 +51,7 @@ body {
 .about__img {
 	background-color: darkblue;
 	height: 24em;
-	width: 38em;
+	width: 120em;
 }
 
 /* Characteristics */
@@ -70,11 +70,11 @@ body {
 	text-transform: uppercase;
 }
 
-.chars__div {
+.chars__ul {
 	display: flex;
 }
 
-.chars__div--card {
+.chars__li {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -122,6 +122,10 @@ body {
 
 .footer__a {
 	font-size: 1.2rem;
+}
+
+.footer__a:hover {
+	color: #1990df;
 }
 
 /* Footer End */

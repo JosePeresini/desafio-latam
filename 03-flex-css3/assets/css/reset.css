@@ -1,10 +1,10 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Aquí definimos las Custom properties */
 :root {
 	--negro: #393939;
 	/* Tipografía */
-	--tipo-principal: Helvetica, Arial, sans-serif;
+	--tipo-principal: "Raleway", Arial, sans-serif;
 	--tipo-secundaria: Verdana;
 }
 

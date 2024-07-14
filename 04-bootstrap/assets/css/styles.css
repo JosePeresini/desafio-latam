@@ -1,0 +1,31 @@
+.navbar > nav a {
+	font-family: var(--family);
+	font-weight: 500;
+}
+
+.navbar > button i {
+	color: #fff;
+}
+
+.navbar > nav ul li:nth-child(2),
+.navbar > nav ul li:nth-child(3) {
+	opacity: 0.8;
+}
+
+.navbar > nav ul li:nth-child(4) {
+	opacity: 0.3;
+}
+
+.card img {
+	border-radius: 0.4em 0.4em 0 0;
+	height: 20em;
+}
+
+.card > .card-body > div i {
+	font-size: 1.5rem;
+}
+
+.card > .card-footer {
+	max-width: 95%;
+	width: 100%;
+}

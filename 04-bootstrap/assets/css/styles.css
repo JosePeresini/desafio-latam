@@ -16,6 +16,10 @@
 	opacity: 0.3;
 }
 
+.card {
+	margin: 5em;
+}
+
 .card img {
 	border-radius: 0.4em 0.4em 0 0;
 	height: 20em;
@@ -28,4 +32,10 @@
 .card > .card-footer {
 	max-width: 95%;
 	width: 100%;
+}
+
+@media (width < 1000px) {
+	.card-style {
+		margin: 10em;
+	}
 }

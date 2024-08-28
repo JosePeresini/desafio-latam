@@ -53,6 +53,8 @@ figure {
 	/* optional */
 	-o-object-position: center center;
 	object-position: center center;
+
+	background-color: aquamarine;
 }
 
 /* We reset the links to work as boxes... */
@@ -185,4 +187,6 @@ body {
 
 	/* optional */
 	-moz-osx-font-smoothing: grayscale;
+
+	background-color: #202020;
 }

@@ -5,23 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/css/reset.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
-		<title>Desafio 1 - CSS Avanzado - FlexBox</title>
+		<title>Contact Me SPA</title>
+		<script
+			src="https://kit.fontawesome.com/56fd4be255.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<div class="container">
 			<aside class="container__aside">
 				<!-- maria Activa -->
-				<section class="section actives">
-					<article class="actives__article">
-						<img src="" alt="" class="actives__img" />
-						<div class="actives__div">
-							<h4 class="actives__h4">Maria</h4>
-							<span class="actives__span">Activa Ahora</span>
+				<section class="section active">
+					<article class="active__article">
+						<img
+							src="./assets/img/maria.jpg"
+							alt="Persona activa al llamado de clientes"
+							class="active__img"
+						/>
+						<div class="active__div">
+							<h4 class="active__h4">maria</h4>
+							<span class="active__span">Activa ahora</span>
 						</div>
 					</article>
 					<div class="icons">
-						<i class="icons__i">comment</i>
-						<i class="icons__i">menu</i>
+						<i class="icons__i fa-regular fa-message"></i>
+						<i class="icons__i fa-solid fa-bars"></i>
 					</div>
 				</section>
 				<!-- maria Activa -->
@@ -35,10 +43,91 @@
 				<!-- chats -->
 				<section class="section chats">
 					<article class="chats__article">
-						<img src="#" alt="#" class="chats__img" />
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.27.14.jpg"
+							alt="Imagen de Juanita - Chat"
+							class="chats__img"
+						/>
 						<div class="chats__div">
-							<h3 class="chats__h3">Nombre</h3>
-							<span class="chats__span">Lorem ipsum dolor sit.</span>
+							<h3 class="chats__h3">Juanita</h3>
+							<span class="chats__span">At vero eos et accusa</span>
+						</div>
+					</article>
+					<article class="chats__article">
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.32.16.jpg"
+							alt="Imagen de Alberto - Chat"
+							class="chats__img"
+						/>
+						<div class="chats__div">
+							<h3 class="chats__h3">Alberto</h3>
+							<span class="chats__span">blanditiis praesentium</span>
+						</div>
+					</article>
+					<article class="chats__article">
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.30.34.jpg"
+							alt="Imagen de Ignacio - Chat"
+							class="chats__img"
+						/>
+						<div class="chats__div">
+							<h3 class="chats__h3">Ignacio</h3>
+							<span class="chats__span">officiis debitis aut</span>
+						</div>
+					</article>
+					<article class="chats__article">
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.28.30.jpg"
+							alt="Imagen de Cristian - Chat"
+							class="chats__img"
+						/>
+						<div class="chats__div">
+							<h3 class="chats__h3">Cristian</h3>
+							<span class="chats__span">officiis debitis aut</span>
+						</div>
+					</article>
+					<article class="chats__article">
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.32.44.jpg"
+							alt="Imagen de María José - Chat"
+							class="chats__img"
+						/>
+						<div class="chats__div">
+							<h3 class="chats__h3">María José</h3>
+							<span class="chats__span">impedit quo minus id</span>
+						</div>
+					</article>
+					<article class="chats__article">
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.31.09.jpg"
+							alt="Imagen de Gonzalo - Chat"
+							class="chats__img"
+						/>
+						<div class="chats__div">
+							<h3 class="chats__h3">Gonzalo</h3>
+							<span class="chats__span">At vero eos et accusa</span>
+						</div>
+					</article>
+					<article class="chats__article">
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.30.54.jpg"
+							alt="Imagen de Juan Pablo - Chat"
+							class="chats__img"
+						/>
+						<div class="chats__div">
+							<h3 class="chats__h3">Juan Pablo</h3>
+							<span class="chats__span">necessitatibus saepe</span>
+						</div>
+					</article>
+					<article class="chats__article">
+						<img
+							src="./assets/img/Screen Shot 2018-11-28 at 15.28.04.jpg"
+							alt="Imagen de Juan Pablo - Chat"
+							class="chats__img"
+						/>
+						<div class="chats__div">
+							<h3 class="chats__h3">Magdalena</h3>
+							<span class="chats__span">ut et voluptates</span>
 						</div>
 					</article>
 				</section>
@@ -46,15 +135,22 @@
 
 			<!-- presents chats -->
 			<section class="container__section present">
-				<img src="" alt="" class="present__img" />
-				<h2 class="present__h2"></h2>
-				<p class="present__p">
-					Lorem ipsum dolor sit 'amet consectetur' adipisicing elit. Fugiat,
-					sequi!
-				</p>
-				<p class="present__p">
-					Lorem ipsum dolor sit amet consectetur adipisicing.
-				</p>
+				<img
+					src="./assets/img/hand.png"
+					alt="Comienza el Nertworking"
+					class="present__img"
+				/>
+				<div class="present__div">
+					<h2 class="present__h2">Comienza el Nertworking</h2>
+					<p class="present__p">
+						Presiona el botón
+						<span class="present__span">“Nuevo chat”</span> para comenzar a
+						crear nuevas
+					</p>
+					<p class="present__p">
+						redes de contacto para tu empresa o emprendimiento.
+					</p>
+				</div>
 			</section>
 			<!-- presents chats -->
 		</div>

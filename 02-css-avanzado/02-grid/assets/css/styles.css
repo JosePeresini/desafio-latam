@@ -1,0 +1,48 @@
+body {
+	background-color: #202020;
+	color: wheat;
+}
+
+.container {
+	min-height: 100vh;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.header {
+	background-color: darkblue;
+
+	display: flex;
+	justify-content: center;
+}
+
+.main {
+	display: grid;
+	grid-template-areas:
+		"aside section section section"
+		"aside section section section";
+	grid-template-columns: 1fr 5fr;
+}
+
+.aside {
+	background-color: darkcyan;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	grid-area: aside;
+}
+
+.section {
+	background-color: darkkhaki;
+	grid-area: section;
+}
+
+.footer {
+	background-color: wheat;
+	color: #000;
+
+	display: flex;
+	justify-content: center;
+}

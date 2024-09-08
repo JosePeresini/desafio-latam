@@ -1,5 +1,5 @@
 body {
-	background-color: #202020;
+	background-color: #dedede;
 	color: wheat;
 }
 
@@ -34,9 +34,84 @@ body {
 	grid-area: aside;
 }
 
+.aside__div {
+	align-items: start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.aside__h3 {
+	padding: 1em 0;
+}
+
+.aside__a {
+	padding: 0.3em 0;
+
+	display: flex;
+	gap: 1em;
+}
+
+.aside__span {
+}
+
 .section {
-	background-color: darkkhaki;
+	border-bottom: 1em solid #dedede;
+	border-left: 1em solid #dedede;
+	border-right: 1em solid #dedede;
+	border-top: 1em solid #dedede;
+
 	grid-area: section;
+
+	display: grid;
+	gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+	background-color: red;
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card__div {
+	background-color: yellow;
+	height: 12em;
+	width: 12em;
+}
+
+.card__img {
+	height: 100%;
+	width: 100%;
+}
+
+.card__h3 {
+	padding-bottom: 0.2em;
+	padding-top: 0.9em;
+}
+
+.card__span {
+	padding-bottom: 1em;
+	padding-top: 0.3em;
+}
+
+.card__button {
+	background-color: blueviolet;
+	cursor: pointer;
+	padding: 2em 4em;
+
+	transition: transform 0.3s ease-in-out;
+	transform: scale(1);
+}
+
+.card__button:hover {
+	transform: scale(0.9);
 }
 
 .footer {

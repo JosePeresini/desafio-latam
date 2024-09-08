@@ -1,24 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Protest+Guerrilla&display=swap");
 
 /* Here we define the Custom properties */
 :root {
-	--typography-titles: "Roboto", sans-serif;
+	--typography-titles: "Protest Guerrilla", sans-serif;
 	/* 
-		font-family: "Roboto", sans-serif;
-  		font-weight: 700;
-  		font-style: normal;
-	*/
-	--typography-common: "Open Sans", sans-serif;
-	/*
-		font-family: "Open Sans", sans-serif;
-  		font-optical-sizing: auto;
   		font-weight: 400;
   		font-style: normal;
-  		font-variation-settings: "width" 100;
 	*/
-	--blue--color: #a491d2;
-	--soap-color: #cdc3e6;
-	--lavender-color: #d4dcff;
+	--typography-common: "Playfair Display", serif;
+	/*
+  		font-optical-sizing: auto;
+  		font-weight: 400;
+  		font-style: normal/italic;
+	*/
+	--red-color: #ff0026;
+	--violet-color: #7d004d;
 	--dark-color: #1b1f21;
 	--space-color: #444749;
 	--silver-color: #828485;

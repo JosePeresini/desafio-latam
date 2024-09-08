@@ -181,6 +181,7 @@ svg {
 } */
 /* We set the typography for the whole web */
 body {
+	background-color: var(--platinum-color);
 	min-height: 100vh;
 	font-size: 100%;
 	font-family: var(--typography-common);

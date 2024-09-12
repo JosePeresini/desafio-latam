@@ -1,26 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Syne:wght@700&display=swap");
 
 /* Here we define the Custom properties */
 :root {
-	--typography-titles: "Protest Guerrilla", sans-serif;
+	--typography-titles: "Syne", sans-serif;
 	/* 
+  		font-weight: 700;
+  		font-style: normal;
+	*/
+	--typography-common: "Inter", sans-serif;
+	/*
   		font-weight: 400;
   		font-style: normal;
 	*/
-	--typography-common: "Playfair Display", serif;
-	/*
-  		font-optical-sizing: auto;
-  		font-weight: 400;
-  		font-style: normal/italic;
-	*/
-	--red-color: #ff0026;
-	--violet-color: #7d004d;
-	--dark-color: #1b1f21;
-	--space-color: #444749;
-	--silver-color: #828485;
+
+	/* Layout Primary */
+	--p-light-color: #ed4b82;
+	--p-main-color: #e91e63;
+	--p-dark-color: #a31545;
+
+	/* Colors Secondary */
+	--s-light-color: #8561c5;
+	--s-main-color: #673ab7;
+	--s-dark-color: #482880;
+
+	/* Colors Tertiary */
 	--white-color: #fff;
-	--platinum-color: #e8ebe4;
-	--gray-color: #bec1bb;
+	--light-color: #d3d3d3;
+	--black-color: #000;
+	--dark-color: #202020;
 }
 
 /* We adapt them to the dark mode */

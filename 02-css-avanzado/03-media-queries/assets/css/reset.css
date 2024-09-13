@@ -26,6 +26,8 @@
 	/* Colors Tertiary */
 	--white-color: #fff;
 	--light-color: #d3d3d3;
+	--platinum-color: #919191;
+	--gray--color: #5a5a5a;
 	--black-color: #000;
 	--dark-color: #202020;
 }
@@ -188,7 +190,7 @@ svg {
 } */
 /* We set the typography for the whole web */
 body {
-	background-color: var(--platinum-color);
+	background-color: var(--white-color);
 	min-height: 100vh;
 	font-size: 100%;
 	font-family: var(--typography-common);

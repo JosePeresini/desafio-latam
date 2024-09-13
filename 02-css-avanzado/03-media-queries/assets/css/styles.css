@@ -1,6 +1,6 @@
+/* Diego no puedo creer que hice esto me encanto esta parte del curso */
+
 .container {
-	background-color: #202020;
-	color: #fff;
 	min-height: 100vh;
 
 	display: grid;
@@ -13,7 +13,7 @@
 }
 
 .header {
-	background-color: red;
+	background-color: var(--p-main-color);
 	min-height: 5em;
 	padding: 0 3em;
 
@@ -25,15 +25,24 @@
 }
 
 .header__div {
+	cursor: pointer;
+
 	align-items: center;
 	display: flex;
 	gap: 0.5em;
 }
 
 .header__i {
+	color: var(--white-color);
+	text-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 .header__h1 {
+	color: var(--white-color);
+	font-family: var(--typography-titles);
+	font-size: 1.5rem;
+	text-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+	text-transform: capitalize;
 }
 
 .header__aside {
@@ -47,10 +56,13 @@
 }
 
 .menu__i {
+	color: var(--white-color);
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 .filter {
-	background-color: blue;
+	background-color: var(--light-color);
 	min-height: 5em;
 	padding: 0.4em;
 
@@ -70,17 +82,21 @@
 }
 
 .filter__p {
-	padding: 0.3em;
+	font-size: 1.4rem;
+	padding-bottom: 0.7em;
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	text-transform: capitalize;
 }
 
 .filter__select {
-	background-color: darkgreen;
-
+	background-color: var(--white-color);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
-	min-height: 3em;
+	font-size: 1.3rem;
+	outline: none;
 	padding: 1em;
-	width: 25em;
+	text-transform: capitalize;
+	width: 20em;
 }
 
 .filter__option {
@@ -92,13 +108,13 @@
 }
 
 .icon__span {
-	right: 1em;
+	font-size: 1.5rem;
 	position: absolute;
-	top: 0.9em;
+	right: 1em;
+	top: 0.8em;
 }
 
 .main {
-	background-color: darkcyan;
 	grid-area: main;
 
 	align-items: center;
@@ -108,11 +124,12 @@
 }
 
 .cards {
-	background-color: blueviolet;
 }
 
 .card {
-	background-color: brown;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+	margin: 2em 0;
+
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -120,8 +137,8 @@
 }
 
 .card__figure {
-	background-color: blanchedalmond;
-	padding: 0.3em;
+	height: 100%;
+	width: 100%;
 
 	align-items: center;
 	display: flex;
@@ -129,30 +146,37 @@
 }
 
 .card__img {
-	background-color: cadetblue;
-	height: 30em;
+	height: 15em;
+	object-fit: cover;
 	width: 23em;
 }
 
 .card__figcaption {
-	color: #000;
-	padding: 1em 0;
+	font-size: 1.5rem;
+	text-transform: capitalize;
 }
 
 .card__div {
-	padding: 2em 0;
+	padding-top: 0.3em;
+	padding-bottom: 1.3em;
 }
 
 .card__button {
-	background-color: aquamarine;
-
+	background-color: var(--p-main-color);
 	border-radius: 7px;
-	padding: 1em 0;
+	color: var(--white-color);
+	cursor: pointer;
+	font-size: 1.4rem;
+	padding: 1em 1.5em;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.card__button:hover {
+	background-color: var(--p-light-color);
 }
 
 .pages {
-	background-color: chartreuse;
-	min-height: 7.2em;
+	padding-bottom: 2em;
 	width: 100%;
 
 	align-items: center;
@@ -161,18 +185,21 @@
 }
 
 .pages__span {
-	background-color: coral;
-
-	border-left: 1px solid black;
+	border: 1px solid var(--light-color);
+	color: var(--p-light-color);
+	cursor: pointer;
+	font-size: 1.1rem;
 	padding: 1em;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.pages__span:last-child {
-	border-right: 1px solid black;
+.pages__span:hover {
+	background-color: var(--p-light-color);
+	color: var(--white-color);
 }
 
 .footer {
-	background-color: burlywood;
+	background-color: var(--p-dark-color);
 	min-height: 7em;
 
 	grid-area: footer;
@@ -184,12 +211,26 @@
 }
 
 .footer__div {
+	padding: 0.3em 0;
+
+	align-items: center;
+	display: flex;
+	gap: 0.8em;
+	justify-content: center;
 }
 
 .footer__i {
+	color: var(--white-color);
+	cursor: pointer;
+	font-size: 2rem;
+	text-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 .footer__p {
+	color: var(--white-color);
+	font-size: 1.3rem;
+	font-family: var(--typography-titles);
+	text-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 576px) {
@@ -217,10 +258,18 @@
 	.header__aside {
 		align-items: center;
 		display: flex;
-		gap: 0 8em;
+		gap: 0 2em;
 	}
 
 	.header__a {
+		color: var(--white-color);
+		font-size: 1.3rem;
+		text-transform: capitalize;
+		transition: text-shadow 0.3s ease-in-out;
+	}
+
+	.header__a:hover {
+		text-shadow: 0 12px 15px rgba(0, 0, 0, 0.7);
 	}
 
 	.menu {
@@ -255,7 +304,7 @@
 
 	.icon__span {
 		right: 1em;
-		top: 4em;
+		top: 3.5em;
 	}
 
 	.main {
@@ -313,6 +362,9 @@
 			"header main"
 			"footer main";
 		grid-template-columns: 1fr 6fr;
+		grid-template-rows: auto auto 2fr 0.3fr;
+		/* Diego tengo un problema en ese 0.3fr si saco el 
+		grid-template-rows se ve mal. */
 	}
 
 	.header {
@@ -335,11 +387,15 @@
 	}
 
 	.header__aside {
+		width: 13em;
+
+		gap: 3em 0;
 		flex-direction: column;
 	}
 
 	.header__a {
-		padding: 1em 0;
+		font-size: 1.5rem;
+		padding: 0.5em 0;
 	}
 
 	.menu {
@@ -364,6 +420,11 @@
 	}
 
 	.filter__option {
+	}
+
+	.icon__span {
+		right: 1em;
+		top: 3.5em;
 	}
 
 	.main {
@@ -422,5 +483,6 @@
 	}
 
 	.footer__p {
+		text-align: center;
 	}
 }

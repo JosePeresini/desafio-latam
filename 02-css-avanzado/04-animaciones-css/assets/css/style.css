@@ -1,0 +1,280 @@
+body {
+	color: white;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 95%;
+	min-height: 100vh;
+
+	display: grid;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	grid-template-columns: 1fr;
+}
+
+.header {
+	background-color: darkorange;
+	padding: 3em 2em;
+
+	grid-area: header;
+
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__h1 {
+}
+
+.title {
+}
+
+.title__a {
+}
+
+.header__aside {
+	display: none;
+}
+
+.header__a {
+}
+
+.main {
+	background-color: brown;
+
+	grid-area: main;
+
+	display: grid;
+	grid-template-areas:
+		"gallery"
+		"follower"
+		"about"
+		"service"
+		"contact";
+	grid-template-columns: 1fr;
+}
+
+.gallery {
+	background-color: darkcyan;
+	padding: 1em 0;
+
+	grid-area: gallery;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery__h2 {
+}
+
+.gallery__div {
+	padding: 1em 0;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.gallery__figure {
+	background-color: red;
+	height: 20em;
+	position: relative;
+	width: 22em;
+
+	align-items: end;
+	display: flex;
+	justify-content: start;
+}
+
+.gallery__img {
+	height: 100%;
+	width: 100%;
+}
+
+.gallery__figcaption {
+	left: 0;
+	bottom: 0;
+	padding: 2em;
+	position: absolute;
+}
+
+.follower {
+	background-color: blueviolet;
+	padding: 2em 0;
+
+	grid-area: follower;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.follower__div {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.follower__i {
+	font-size: 4rem;
+	padding: 0.5em 0;
+}
+
+.follower__span {
+	font-size: 3rem;
+	padding: 0.5em 0;
+}
+
+.about {
+	background-color: darkolivegreen;
+	background-image: url("../img/Screenshot\ 2024-09-25\ 072156.png");
+	padding: 2em 0;
+
+	grid-area: about;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	justify-content: center;
+}
+
+.about__header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.about__h2 {
+}
+
+.about__figure {
+	display: none;
+}
+
+.about__img {
+}
+
+.about__figcaption {
+}
+
+.about__p {
+	padding: 0 2em;
+}
+
+.service {
+	background-color: darkgreen;
+	padding: 2em 0;
+
+	grid-area: service;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.service__h2 {
+}
+
+.service__div .content {
+}
+
+.content__div {
+	background-color: red;
+	border-radius: 50%;
+	height: 20em;
+	margin: 4em 0;
+	position: relative;
+	width: 20em;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.content__h3 {
+	position: absolute;
+	top: 2em;
+}
+
+.content__span {
+	bottom: 2em;
+	position: absolute;
+}
+
+.contact {
+	grid-area: contact;
+}
+
+.contact__fieldset {
+	background-color: cadetblue;
+	padding: 2em 0;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.contact__h2 {
+}
+
+.contact__label {
+}
+
+.contact__input {
+	background-color: wheat;
+	border-bottom: 3px solid blue;
+	padding: 2em;
+	width: 22em;
+}
+
+.contact__textarea {
+	background-color: wheat;
+	height: 12em;
+	padding: 1em;
+	width: 22em;
+}
+
+.contact__button {
+}
+
+.footer {
+	background-color: darkorchid;
+
+	grid-area: footer;
+}
+
+.nav {
+	min-height: 20em;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.nav__info .info {
+}
+
+.info__li {
+	padding: 1em 0;
+}
+
+.info__a {
+}
+
+.nav__network .network {
+}
+
+.network__li {
+	padding: 1em 0;
+}
+
+.network__a {
+}

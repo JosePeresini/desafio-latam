@@ -14,14 +14,14 @@
 	*/
 
 	/* Layout Primary */
-	--p-light-color: #c09235;
-	--p-main-color: #eba51a;
-	--p-dark-color: #967a42;
+	--p-light-color: #d9c6bd;
+	--p-main-color: #4f847e;
+	--p-dark-color: #163330;
 
 	/* Colors Secondary */
-	--s-light-color: #786849;
-	--s-main-color: #413c32;
-	--s-dark-color: #403f3c;
+	--s-light-color: #b2d9d5;
+	--s-main-color: #5c3b2b;
+	--s-dark-color: #997a6b;
 
 	/* Colors Tertiary */
 	--black-color: #000;
@@ -190,7 +190,7 @@ svg {
 } */
 /* We set the typography for the whole web */
 body {
-	background-color: var(--dark-color);
+	background-color: var(--white-color);
 	min-height: 100vh;
 	font-size: 100%;
 	font-family: var(--typography-common);

@@ -16,8 +16,25 @@
 					<p>
 						Cantidad:
 						<span class="cantidad">0</span>
-						<button>+</button>
-						<button>-</button>
+						<button
+							onclick="
+                        cant = document.querySelector('.cantidad');
+                        numMas = Number(cant.innerHTML);
+                        numMas = numMas + 1;
+                        cant.innerHTML = numMas;
+                        "
+						>
+							+
+						</button>
+						<button
+							onclick="
+                            numMenos = Number(cant.innerHTML);
+                            numMenos = numMenos - 1;
+                            cant.innerHTML = numMenos;
+							"
+						>
+							-
+						</button>
 					</p>
 				</div>
 			</div>

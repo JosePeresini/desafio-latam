@@ -22,6 +22,8 @@
                         numMas = Number(cant.innerHTML);
                         numMas = numMas + 1;
                         cant.innerHTML = numMas;
+                        valorTotal = document.querySelector('.valor-total') ;
+                        valorTotal.innerHTML = precio * numMas
                         "
 						>
 							+
@@ -31,6 +33,7 @@
                             numMenos = Number(cant.innerHTML);
                             numMenos = numMenos - 1;
                             cant.innerHTML = numMenos;
+							valorTotal.innerHTML = precio * numMenos
 							"
 						>
 							-

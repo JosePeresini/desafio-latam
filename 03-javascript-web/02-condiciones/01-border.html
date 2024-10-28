@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Condiciones - 2° Desafio - Bordes</title>
+	</head>
+	<body>
+		<section class="border">
+			<figure class="border__figure">
+				<img
+					alt=""
+					class="border__img"
+					src="./assets/img/border-world.png"
+					onclick="
+						withBorder = document.querySelector('.border__img');
+						
+						if (withBorder.style.border === 'none' ) {
+							withBorder.style.borderColor = 'red';
+							withBorder.style.borderStyle = 'solid';
+							withBorder.style.borderWidth = '1px';
+						} else {
+							withBorder.style.border = 'none'
+						}
+						"
+				/>
+				<figcaption class="border__figcaption">El Mundo</figcaption>
+			</figure>
+		</section>
+	</body>
+</html>

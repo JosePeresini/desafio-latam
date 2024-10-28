@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Condiciones - 2° Desafio - Selectores</title>
+	</head>
+	<body>
+		<section class="selectors">
+			<div action="" class="selectors__div">
+				<div class="selectors__container">
+					<select name="" id="selectors-1" class="selectors__select">
+						<option value="incorrect" class="selectors__option">1</option>
+						<option value="incorrect" class="selectors__option">2</option>
+						<option value="incorrect" class="selectors__option">3</option>
+						<option value="incorrect" class="selectors__option">4</option>
+						<option value="incorrect" class="selectors__option">5</option>
+						<option value="incorrect" class="selectors__option">6</option>
+						<option value="correct-7" class="selectors__option">7</option>
+						<option value="incorrect" class="selectors__option">8</option>
+						<option value="correct-9" class="selectors__option">9</option>
+					</select>
+					<select name="" id="selectors-2" class="selectors__select">
+						<option value="correct-1" class="selectors__option">1</option>
+						<option value="incorrect" class="selectors__option">2</option>
+						<option value="incorrect" class="selectors__option">3</option>
+						<option value="incorrect" class="selectors__option">4</option>
+						<option value="incorrect" class="selectors__option">5</option>
+						<option value="incorrect" class="selectors__option">6</option>
+						<option value="incorrect" class="selectors__option">7</option>
+						<option value="incorrect" class="selectors__option">8</option>
+						<option value="incorrect" class="selectors__option">9</option>
+					</select>
+					<select name="" id="selectors-3" class="selectors__select">
+						<option value="correct-1" class="selectors__option">1</option>
+						<option value="incorrect" class="selectors__option">2</option>
+						<option value="incorrect" class="selectors__option">3</option>
+						<option value="correct-4" class="selectors__option">4</option>
+						<option value="incorrect" class="selectors__option">5</option>
+						<option value="incorrect" class="selectors__option">6</option>
+						<option value="incorrect" class="selectors__option">7</option>
+						<option value="incorrect" class="selectors__option">8</option>
+						<option value="incorrect" class="selectors__option">9</option>
+					</select>
+				</div>
+				<button
+					class="selectors__button"
+					onclick="
+						selectorsSel1 = document.querySelector('#selectors-1').value;
+						selectorsSel2 = document.querySelector('#selectors-2').value;
+						selectorsSel3 = document.querySelector('#selectors-3').value;
+
+						selectorsPph = document.querySelector('.selectors__p');
+
+						selectorsDiv = document.querySelector('.selectors__div');
+
+						if (selectorsSel1 === 'correct-9' && selectorsSel2 === 'correct-1' && selectorsSel3 === 'correct-1' ) {
+							selectorsPph.innerText = 'Contraseña Correcta';
+							selectorsPph.style.opacity = '1'
+							selectorsDiv.style.borderBottom = '3px solid green';
+						} else if (selectorsSel1 === 'correct-7' && selectorsSel2 === 'correct-1' && selectorsSel3 === 'correct-4' ) {
+							selectorsPph.innerText = 'Contraseña Correcta';
+							selectorsPph.style.opacity = '1'
+							selectorsDiv.style.borderBottom = '3px solid green';
+						} else {
+							selectorsPph.innerText = 'Contraseña Incorrecta';
+							selectorsPph.style.opacity = '1'
+							selectorsDiv.style.borderBottom = '3px solid red';
+						}
+                "
+				>
+					Enviar
+				</button>
+			</div>
+			<p class="selectors__p">Contraseña</p>
+		</section>
+	</body>
+</html>

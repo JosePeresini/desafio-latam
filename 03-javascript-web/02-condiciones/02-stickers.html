@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Condiciones - 2° Desafio - Stickers</title>
+	</head>
+	<body>
+		<section class="stickers">
+			<div class="stickers__container">
+				<div class="stickers__sticker">
+					<figure class="stickers__figure">
+						<img
+							src="./assets/img/sticker-madara.png"
+							alt=""
+							class="stickers__img"
+						/>
+						<figcaption class="stickers__figcaption">Madara</figcaption>
+					</figure>
+					<input
+						type="text"
+						class="stickers__input stickers__input--madara"
+						onchange="
+						stickersMadara = Number(value);
+						stickersP = document.querySelector('.stickers__p');
+						addStickers = stickersMadara + stickersNaruto + stickersSasuke;
+						
+						if ( addStickers > 10) {
+							stickersP.innerText = 'Llevas demasiados stickers'
+						} else {
+							stickersP.innerText = 'Llevas ' + addStickers + ' stickers';
+						}
+					"
+					/>
+				</div>
+				<div class="stickers__sticker">
+					<figure class="stickers__figure">
+						<img
+							src="./assets/img/sticker-naruto.png"
+							alt=""
+							class="stickers__img"
+						/>
+						<figcaption class="stickers__figcaption">Naruto</figcaption>
+					</figure>
+					<input
+						type="text"
+						class="stickers__input stickers__input--naruto"
+						onchange="
+						stickersNaruto = Number(value);
+						stickersP = document.querySelector('.stickers__p');
+						addStickers = stickersMadara + stickersNaruto + stickersSasuke;
+						
+						if ( addStickers > 10) {
+							stickersP.innerText = 'Llevas demasiados stickers'
+						} else {
+							stickersP.innerText = 'Llevas ' + addStickers + ' stickers';
+						}
+					"
+					/>
+				</div>
+				<div class="stickers__sticker">
+					<figure class="stickers__figure">
+						<img
+							src="./assets/img/sticker-sasuke.png"
+							alt=""
+							class="stickers__img"
+						/>
+						<figcaption class="stickers__figcaption">Sasuke</figcaption>
+					</figure>
+					<input
+						type="text"
+						class="stickers__input stickers__input--sasuke"
+						onchange="
+						stickersSasuke = Number(value);
+						stickersP = document.querySelector('.stickers__p');
+						addStickers = stickersMadara + stickersNaruto + stickersSasuke;
+						
+						if ( addStickers > 10) {
+							stickersP.innerText = 'Llevas demasiados stickers'
+						}  else {
+							stickersP.innerText = 'Llevas ' + addStickers + ' stickers';
+						}
+					"
+					/>
+				</div>
+			</div>
+			<p class="stickers__p"></p>
+		</section>
+	</body>
+</html>

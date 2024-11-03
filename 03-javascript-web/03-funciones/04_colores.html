@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Desafio 3 - Ejercicio 4 - Funciones en JS</title>
+	</head>
+	<body>
+		<div class="container">
+			<div
+				style="height: 200px; width: 200px; background-color: blue"
+				class="container__div container__div--blue"
+			>
+				1
+			</div>
+			<div
+				style="height: 200px; width: 200px; background-color: red"
+				class="container__div container__div--red"
+			>
+				2
+			</div>
+			<div
+				style="height: 200px; width: 200px; background-color: green"
+				class="container__div container__div--green"
+			>
+				3
+			</div>
+			<div
+				style="height: 200px; width: 200px; background-color: yellow"
+				class="container__div container__div--yellow"
+			>
+				4
+			</div>
+		</div>
+		<script>
+			// Ejercicio 4
+
+			function paintBlack(event) {
+				event.target.style.backgroundColor = "black";
+				event.target.style.color = "white";
+			}
+
+			const containerDivBlue = document.querySelector(".container__div--blue");
+			const containerDivRed = document.querySelector(".container__div--red");
+			const containerDivGreen = document.querySelector(
+				".container__div--green"
+			);
+			const containerDivYellow = document.querySelector(
+				".container__div--yellow"
+			);
+
+			containerDivBlue.addEventListener("click", paintBlack);
+			containerDivRed.addEventListener("click", paintBlack);
+			containerDivGreen.addEventListener("click", paintBlack);
+			containerDivYellow.addEventListener("click", paintBlack);
+		</script>
+	</body>
+</html>

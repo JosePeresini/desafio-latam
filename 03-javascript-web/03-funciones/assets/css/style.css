@@ -1,0 +1,34 @@
+#ele1 {
+	background-color: darkred;
+	border: solid 0.1em white;
+	color: white;
+	font-size: 2rem;
+	height: 10em;
+	width: 10em;
+
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	background-color: grey;
+	border: solid white 0.3em;
+	min-height: 30em;
+	width: 60em;
+
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: center;
+}
+
+.container__div {
+	border: white solid 0.1em;
+	font-size: 2rem;
+
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}

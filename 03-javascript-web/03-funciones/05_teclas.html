@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Desafio 3 - Ejercicio 5 - Funciones en JS</title>
+	</head>
+	<body style="align-items: start; justify-content: start; flex-wrap: wrap">
+		<div
+			class="color-div"
+			id="div"
+			style="
+				background-color: white;
+				border: solid black;
+				height: 200px;
+				width: 200px;
+			"
+		></div>
+	</body>
+	<script>
+		// Ejercicio 5
+
+		document.addEventListener("keydown", function (event) {
+			if (event.key === "a" || event.key === "A") {
+				colorPink();
+			} else if (event.key === "s" || event.key === "S") {
+				colorOrange();
+			} else if (event.key === "d" || event.key === "D") {
+				colorTurquoise();
+			} else if (event.key === "q" || event.key === "Q") {
+				colorDivPurple();
+			} else if (event.key === "w" || event.key === "W") {
+				colorDivGray();
+			} else if (event.key === "e" || event.key === "E") {
+				colorDivCoffee();
+			}
+		});
+
+		function colorPink() {
+			const div = document.getElementById("div");
+			div.style.backgroundColor = "pink";
+		}
+
+		function colorOrange() {
+			const div = document.getElementById("div");
+			div.style.backgroundColor = "orange";
+		}
+
+		function colorTurquoise() {
+			const div = document.getElementById("div");
+			div.style.backgroundColor = "turquoise";
+		}
+
+		function colorDivPurple() {
+			createNewDiv("purple");
+		}
+
+		function colorDivGray() {
+			createNewDiv("gray");
+		}
+
+		function colorDivCoffee() {
+			createNewDiv("#8b4513");
+		}
+
+		function createNewDiv(color) {
+			const newDiv = document.createElement("div");
+
+			newDiv.className = "color-div";
+			newDiv.style.backgroundColor = color;
+			newDiv.style.height = "200px";
+			newDiv.style.width = "200px";
+
+			document.body.appendChild(newDiv);
+		}
+	</script>
+</html>

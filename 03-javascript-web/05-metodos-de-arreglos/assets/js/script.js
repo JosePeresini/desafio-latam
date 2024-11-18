@@ -21,3 +21,25 @@ clickButton.addEventListener("click", () => {
 
 	renderHTML();
 });
+
+function renderHTML() {
+	let htmlTaskId = "";
+	let htmlTaskUl = "";
+
+	tasks.forEach((task, index) => {
+		htmlTaskId += `
+           	<ul class="id__ul">
+		 		<li>${index + 1}</li>  
+		   	</ul>
+		`;
+
+		htmlTaskUl += `
+			<ul class="task__ul">
+				<li>${task}</li>
+			</ul>
+		`;
+	});
+
+	seeId.innerHTML = htmlTaskId;
+	seeList.innerHTML = htmlTaskUl;
+}

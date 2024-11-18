@@ -42,4 +42,8 @@ function renderHTML() {
 
 	seeId.innerHTML = htmlTaskId;
 	seeList.innerHTML = htmlTaskUl;
+
+	if (tasks.length >= 5) {
+		todoDivContainer.style.height = `${tasks.length * 2}em`;
+	}
 }

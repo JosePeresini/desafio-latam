@@ -5,6 +5,7 @@ const seeId = document.querySelector(".id__ul");
 const seeList = document.querySelector(".task__ul");
 const seeCheck = document.querySelector(".change__ul");
 const seeDelete = document.querySelector(".deletetask__ul");
+const seeTotal = document.querySelector(".todo__span--total");
 
 const tasks = [];
 
@@ -72,6 +73,8 @@ function renderHTML() {
 	if (tasks.length >= 5) {
 		todoDivContainer.style.height = `${tasks.length * 2}em`;
 	}
+
+	seeTotal.textContent = tasks.length;
 }
 
 function deleteTask(id) {

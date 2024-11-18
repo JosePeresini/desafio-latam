@@ -12,6 +12,52 @@
 		<title>Desafío 5 - Todo List</title>
 	</head>
 	<body>
+		<div class="container">
+			<section class="todo">
+				<div class="todo__div title">
+					<h2 class="title__h2">Todo List</h2>
+				</div>
+				<h3 class="todo__h3">Tareas</h3>
+				<div class="todo__div--arr">
+					<input
+						type="text"
+						class="todo__input"
+						placeholder="Ingrese una tarea"
+					/>
+					<button class="todo__button">Agregar</button>
+				</div>
+				<ul class="todo__ul">
+					<li class="todo__li">
+						<h3 class="todo__h3--total">Total:</h3>
+						<span class="todo__span--total">0</span>
+					</li>
+					<li class="todo__li">
+						<h3 class="todo__h3--doit">Realizadas:</h3>
+						<span class="todo__span--doit">0</span>
+					</li>
+				</ul>
+				<div class="todo__div--container">
+					<div class="todo__div id">
+						<h3 class="id__h3">ID</h3>
+						<ul class="id__ul"></ul>
+					</div>
+					<div class="todo__div task">
+						<h3 class="task__h3">Tarea</h3>
+						<ul class="task__ul"></ul>
+					</div>
+					<div class="todo__div--cd">
+						<div class="todo__div change">
+							<i class="change__i bi bi-check-square-fill"></i>
+							<ul class="change__ul"></ul>
+						</div>
+						<div class="todo__div deletetask">
+							<i class="deletetask__i--title bi-x-square-fill"></i>
+							<ul class="deletetask__ul"></ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 		<script src="./assets/js/script.js"></script>
 	</body>
 </html>

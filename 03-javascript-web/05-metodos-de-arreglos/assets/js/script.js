@@ -3,6 +3,7 @@ const clickButton = document.querySelector(".todo__button");
 const todoDivContainer = document.querySelector(".todo__div--container");
 const seeId = document.querySelector(".id__ul");
 const seeList = document.querySelector(".task__ul");
+const seeCheck = document.querySelector(".change__ul");
 const seeDelete = document.querySelector(".deletetask__ul");
 
 const tasks = [];
@@ -17,7 +18,7 @@ clickButton.addEventListener("click", () => {
 		enterInput.placeholder = "Ingrese una tarea";
 	}
 
-	tasks.push(newTask);
+	tasks.push({ text: newTask, checked: false });
 	enterInput.value = "";
 
 	renderHTML();
@@ -27,6 +28,7 @@ function renderHTML() {
 	let htmlTaskId = "";
 	let htmlTaskUl = "";
 	let htmlDeleteTask = "";
+	let htmlChangeCheck = "";
 
 	tasks.forEach((task, index) => {
 		htmlTaskId += `
@@ -50,11 +52,22 @@ function renderHTML() {
 				</li>
 			</ul>
 		`;
+
+		htmlChangeCheck += `
+			<ul class="change__ul">
+				<li class="change__li">
+					<input type="checkbox" class="change__input" onclick="checkTask(${index})" ${
+			task.checked ? "checked" : ""
+		} />
+				</li>
+			</ul>
+		`;
 	});
 
 	seeId.innerHTML = htmlTaskId;
 	seeList.innerHTML = htmlTaskUl;
 	seeDelete.innerHTML = htmlDeleteTask;
+	seeCheck.innerHTML = htmlChangeCheck;
 
 	if (tasks.length >= 5) {
 		todoDivContainer.style.height = `${tasks.length * 2}em`;
@@ -63,5 +76,10 @@ function renderHTML() {
 
 function deleteTask(id) {
 	tasks.splice(id, 1);
+	renderHTML();
+}
+
+function checkTask(id) {
+	tasks[id].checked = !tasks[id].checked;
 	renderHTML();
 }

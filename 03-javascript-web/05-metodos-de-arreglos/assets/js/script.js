@@ -6,6 +6,7 @@ const seeList = document.querySelector(".task__ul");
 const seeCheck = document.querySelector(".change__ul");
 const seeDelete = document.querySelector(".deletetask__ul");
 const seeTotal = document.querySelector(".todo__span--total");
+const seeDoIt = document.querySelector(".todo__span--doit");
 
 const tasks = [];
 
@@ -15,12 +16,11 @@ clickButton.addEventListener("click", () => {
 	if (newTask === "") {
 		enterInput.placeholder = "Campo requerido";
 		return;
-	} else {
-		enterInput.placeholder = "Ingrese una tarea";
 	}
 
 	tasks.push({ text: newTask, checked: false });
 	enterInput.value = "";
+	enterInput.placeholder = "Ingrese una tarea";
 
 	renderHTML();
 });
@@ -75,6 +75,7 @@ function renderHTML() {
 	}
 
 	seeTotal.textContent = tasks.length;
+	seeDoIt.textContent = tasks.filter((task) => task.checked).length;
 }
 
 function deleteTask(id) {

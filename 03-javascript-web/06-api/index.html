@@ -7,5 +7,42 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>Desafio Prueba Final JS - Desafio Latam</title>
 	</head>
-	<body></body>
+	<body>
+		<!-- modified base block modifier element -->
+		<div class="container">
+			<section class="conversor">
+				<h1 class="conversor__h1">Conversor de monedas nacional</h1>
+				<article class="conversor__article">
+					<header class="conversor__header">
+						<h2 class="conversor__h2">Pesos CLP</h2>
+						<input
+							type="number"
+							required
+							class="conversor__input"
+							minlength="2"
+						/>
+					</header>
+					<div class="conversor__div">
+						<h3 class="conversor__h3">Seleccionar Moneda</h3>
+						<select name="" id="" class="conversor__select">
+							<option value="" class="conversor__option">
+								Moneda a elegir
+							</option>
+						</select>
+						<p class="conversor__p">
+							Precio: $<span class="conversor__span--value">0</span>
+						</p>
+						<button class="conversor__button">Convertir</button>
+						<p class="conversor__p">
+							Resultado: $<span class="conversor__span--result">0</span>
+						</p>
+					</div>
+				</article>
+			</section>
+			<section class="chart">
+				<h2 class="chart__h2">Grafica</h2>
+				<canvas class="chart__canvas"></canvas>
+			</section>
+		</div>
+	</body>
 </html>

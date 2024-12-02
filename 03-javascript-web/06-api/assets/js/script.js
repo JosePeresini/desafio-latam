@@ -45,4 +45,16 @@ async function renderCurrency(data) {
 			conversorSpanR.textContent = "0";
 		}
 	});
+
+	conversorInput.addEventListener("keydown", (event) => {
+		if (
+			event.key === "e" ||
+			event.key === "E" ||
+			event.key === "+" ||
+			event.key === "-"
+		) {
+			alert("Ingrese un número");
+			event.preventDefault();
+		}
+	});
 }

@@ -1,0 +1,91 @@
+{
+	"version": "1.7.0",
+	"author": "mindicador.cl",
+	"current_date": "2022-08-04T20:00:00.000Z",
+	"currency": [
+		{
+			"code": "uf",
+			"name": "Unidad de fomento",
+			"unit_of_measure": "Pesos",
+			"date": "2022-08-04T04:00:00.000Z",
+			"measurement_value": 33455.92
+		},
+		{
+			"code": "ivp",
+			"name": "Indice de valor promedio",
+			"unit_of_measure": "Pesos",
+			"date": "2022-08-04T04:00:00.000Z",
+			"measurement_value": 34000.48
+		},
+		{
+			"code": "dolar",
+			"name": "Dólar observado",
+			"unit_of_measure": "Pesos",
+			"date": "2022-08-04T04:00:00.000Z",
+			"measurement_value": 907.82
+		},
+		{
+			"code": "dolar_intercambio",
+			"name": "Dólar acuerdo",
+			"unit_of_measure": "Pesos",
+			"date": "2014-11-13T03:00:00.000Z",
+			"measurement_value": 758.87
+		},
+		{
+			"code": "euro",
+			"name": "Euro",
+			"unit_of_measure": "Pesos",
+			"date": "2022-08-04T04:00:00.000Z",
+			"measurement_value": 922.21
+		},
+		{
+			"code": "ipc",
+			"name": "Indice de Precios al Consumidor",
+			"unit_of_measure": "Porcentaje",
+			"date": "2022-06-01T04:00:00.000Z",
+			"measurement_value": 0.9
+		},
+		{
+			"code": "utm",
+			"name": "Unidad Tributaria Mensual",
+			"unit_of_measure": "Pesos",
+			"date": "2022-08-01T04:00:00.000Z",
+			"measurement_value": 58772
+		},
+		{
+			"code": "imacec",
+			"name": "Imacec",
+			"unit_of_measure": "Porcentaje",
+			"date": "2022-06-01T04:00:00.000Z",
+			"measurement_value": 3.7
+		},
+		{
+			"code": "tpm",
+			"name": "Tasa Política Monetaria",
+			"unit_of_measure": "Porcentaje",
+			"date": "2022-08-04T04:00:00.000Z",
+			"measurement_value": 9.75
+		},
+		{
+			"code": "libra_cobre",
+			"name": "Libra de Cobre",
+			"unit_of_measure": "Dólar",
+			"date": "2022-08-04T04:00:00.000Z",
+			"measurement_value": 3.54
+		},
+		{
+			"code": "tasa_desempleo",
+			"name": "Tasa de desempleo",
+			"unit_of_measure": "Porcentaje",
+			"date": "2022-06-01T04:00:00.000Z",
+			"measurement_value": 7.81
+		},
+		{
+			"code": "bitcoin",
+			"name": "Bitcoin",
+			"unit_of_measure": "Dólar",
+			"date": "2022-08-01T04:00:00.000Z",
+			"measurement_value": 23298.94
+		}
+	]
+}

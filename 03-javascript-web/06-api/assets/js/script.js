@@ -32,4 +32,17 @@ async function renderCurrency(data) {
 
 		conversorSpanV.textContent = value;
 	});
+
+	conversorButton.addEventListener("click", () => {
+		const selectedOption = conversorSelect.selectedOptions[0];
+		const value = Number(selectedOption.dataset.value);
+		const inputValue = Number(conversorInput.value);
+
+		if (!isNaN(inputValue) && !isNaN(value) && inputValue > 0) {
+			const result = inputValue * value;
+			conversorSpanR.textContent = result.toFixed(2);
+		} else {
+			conversorSpanR.textContent = "0";
+		}
+	});
 }

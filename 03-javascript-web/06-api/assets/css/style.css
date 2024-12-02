@@ -1,4 +1,5 @@
 .container {
+	margin: 4em 0;
 	min-height: 100vh;
 	width: 100%;
 
@@ -12,6 +13,7 @@
 	background-color: var(--dark-color);
 	box-shadow: 0 0px 12px rgba(255, 255, 255, 0.7);
 	min-height: 40em;
+	margin: 4em 0;
 	max-width: 95%;
 
 	align-items: center;
@@ -56,7 +58,7 @@
 	border-radius: 0.4em;
 	box-shadow: 0 0 12px rgba(255, 255, 255, 0.7) inset;
 	color: var(--black-color);
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	padding: 0.5em 0;
 	text-align: center;
 	width: 70%;
@@ -70,7 +72,7 @@
 }
 
 .conversor__h3 {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	text-align: center;
 }
@@ -123,15 +125,27 @@
 }
 
 .chart {
-	background-color: darkcyan;
-	display: none;
-	width: 100%;
+	min-height: 23em;
+	width: 90%;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .chart__h2 {
+	border-bottom: 0.3em solid var(--red-color);
+	font-size: 2rem;
+	min-height: 2.5em;
+	text-align: center;
+	width: 95%;
 }
 
 .chart__canvas {
+	background-color: var(--light-gray-color);
+	border: 0.3em solid var(--blue-light-color);
+	border-radius: 0.4em;
 }
 
 @media (min-width: 576px) {
@@ -197,5 +211,6 @@
 	}
 
 	.chart__canvas {
+		margin-top: 4em;
 	}
 }

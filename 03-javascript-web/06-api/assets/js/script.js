@@ -59,4 +59,29 @@ async function renderCurrency(data) {
 	});
 }
 
-getCurrency();
+function configChart(data) {
+	const backgroundColor = "#fff";
+	const color = "#09f";
+	const type = "line";
+	const money = data.map((money) => money.name);
+	const title = "Monedas";
+	const values = data.map((money) => {
+		const value = money.measurement_value;
+		return Number(value);
+	});
+
+	const config = {
+		type: type,
+		data: {
+			labels: money,
+			datasets: [
+				{
+					label: title,
+					borderColor: color,
+					data: values,
+				},
+			],
+		},
+	};
+	return config;
+}

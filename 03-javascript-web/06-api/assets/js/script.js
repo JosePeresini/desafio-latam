@@ -25,4 +25,11 @@ async function renderCurrency(data) {
 		option.className = "conversor__option";
 		conversorSelect.appendChild(option);
 	});
+
+	conversorSelect.addEventListener("change", (event) => {
+		const selectedOption = event.target.selectedOptions[0];
+		const value = selectedOption.dataset.value;
+
+		conversorSpanV.textContent = value;
+	});
 }

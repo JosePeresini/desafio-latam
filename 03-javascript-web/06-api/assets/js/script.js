@@ -85,3 +85,13 @@ function configChart(data) {
 	};
 	return config;
 }
+
+async function render() {
+	const currency = await getCurrency();
+	const config = configChart(currency);
+	const chartDOM = document.querySelector(".chart__canvas");
+
+	new Chart(chartDOM, config);
+}
+
+render();

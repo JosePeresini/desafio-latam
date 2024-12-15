@@ -1,0 +1,670 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.navbar {
+	background-color: red;
+	min-height: 6em;
+	width: 100%;
+
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+
+	grid-area: navbar;
+}
+
+.navbar__a {
+	font-size: 1.3rem;
+}
+
+.navbar__menu {
+	transition: opacity 0.3s ease-in-out;
+}
+
+.navbar__ul {
+	column-gap: 1em;
+	display: none;
+}
+
+.navbar__li {
+}
+
+.navbar__a--link {
+}
+
+.navbar__a--link:hover {
+	text-decoration: underline;
+}
+
+.navbar__i {
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.navbar__a--cart {
+	font-size: 1.3rem;
+
+	display: none;
+}
+
+.header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+
+	grid-area: header;
+}
+
+.header__figure {
+	min-height: 100%;
+	position: relative;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header__img {
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.3;
+	width: 100%;
+}
+
+.header__hr {
+	border-bottom: 0.1em solid white;
+	min-height: 8em;
+	opacity: 0.7;
+	position: absolute;
+	width: 100%;
+}
+
+.header__figcaption {
+	position: absolute;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.header__h1 {
+	font-size: 2.2rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.header__p {
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.cardpizza {
+	margin: 3em auto;
+	max-width: 95%;
+	min-height: 100em;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	grid-area: home;
+}
+
+.cardpizza__div--container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	justify-content: space-around;
+}
+
+.cardpizza__article {
+	border: solid 0.1em white;
+	min-height: 30%;
+	max-width: 95%;
+	padding: 3%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cardpizza__div {
+	display: flex;
+	flex-direction: column;
+}
+
+.cardpizza__img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.cardpizza__header {
+	min-height: 4em;
+}
+
+.cardpizza__h3 {
+	font-size: 1.5rem;
+}
+
+.cardpizza__hr--title {
+	border-bottom: 0.1em solid white;
+	min-height: 1em;
+	opacity: 0.1;
+	width: 100%;
+}
+
+.cardpizza__p {
+	font-size: 1.1rem;
+	min-height: 8em;
+	width: 100%;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.cardpizza__span {
+}
+
+.cardpizza__hr--ingredients {
+	border-bottom: 0.1em solid white;
+	opacity: 0.1;
+	width: 100%;
+}
+
+.cardpizza__footer {
+	min-height: 6em;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.cardpizza__h4 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.cardpizza__span---price {
+}
+
+.cardpizza__div--buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.cardpizza__button {
+	border: solid 0.1em white;
+	border-radius: 0.5em;
+	cursor: pointer;
+	height: 2em;
+	transition: opacity 0.3s ease-in-out;
+	width: 7em;
+}
+
+.cardpizza__button:last-child {
+	background-color: red;
+}
+
+.cardpizza__button:hover {
+	opacity: 0.7;
+}
+
+.footer {
+	background-color: black;
+	min-height: 8em;
+
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	grid-area: footer;
+}
+
+.footer__p {
+	line-height: 3;
+}
+
+.footer__p--title {
+	text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.9),
+		1px 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+@media (min-width: 768px) {
+	.navbar {
+	}
+
+	.navbar__a {
+	}
+
+	.navbar__menu {
+	}
+
+	.navbar__ul {
+	}
+
+	.navbar__li {
+	}
+
+	.navbar__a--link {
+	}
+
+	.navbar__i {
+	}
+
+	.navbar__a--cart {
+		display: block;
+	}
+
+	.header {
+	}
+
+	.header__figure {
+		height: 25em;
+	}
+
+	.header__img {
+	}
+
+	.header__figcaption {
+	}
+
+	.header__h1 {
+	}
+
+	.header__p {
+	}
+
+	.header__hr {
+	}
+
+	.cardpizza {
+		min-height: 65em;
+	}
+
+	.cardpizza__div--container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.cardpizza__article {
+		min-height: 30em;
+		padding: 3%;
+	}
+
+	.cardpizza__div {
+	}
+
+	.cardpizza__img {
+	}
+
+	.cardpizza__header {
+	}
+
+	.cardpizza__h3 {
+	}
+
+	.cardpizza__hr--title {
+	}
+
+	.cardpizza__p {
+	}
+
+	.cardpizza__span {
+	}
+
+	.cardpizza__hr--ingredients {
+	}
+
+	.cardpizza__footer {
+	}
+
+	.cardpizza__h4 {
+	}
+
+	.cardpizza__span---price {
+	}
+
+	.cardpizza__div--buttons {
+	}
+
+	.cardpizza__button {
+	}
+
+	.footer {
+	}
+
+	.footer__p {
+	}
+
+	.footer__p--title {
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar {
+	}
+
+	.navbar__a {
+	}
+
+	.navbar__menu {
+		display: none;
+	}
+
+	.navbar__ul {
+		display: flex;
+	}
+
+	.navbar__li {
+	}
+
+	.navbar__a--link {
+	}
+
+	.navbar__i {
+	}
+
+	.navbar__a--cart {
+	}
+
+	.header {
+	}
+
+	.header__figure {
+	}
+
+	.header__img {
+	}
+
+	.header__figcaption {
+	}
+
+	.header__h1 {
+	}
+
+	.header__p {
+	}
+
+	.header__hr {
+	}
+
+	.cardpizza {
+	}
+
+	.cardpizza__div--container {
+		display: grid;
+		row-gap: 4em;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.cardpizza__article {
+		min-height: 105%;
+		padding: 0 3%;
+	}
+
+	.cardpizza__div {
+	}
+
+	.cardpizza__img {
+	}
+
+	.cardpizza__header {
+	}
+
+	.cardpizza__h3 {
+	}
+
+	.cardpizza__hr--title {
+	}
+
+	.cardpizza__p {
+	}
+
+	.cardpizza__span {
+	}
+
+	.cardpizza__hr--ingredients {
+	}
+
+	.cardpizza__footer {
+	}
+
+	.cardpizza__h4 {
+	}
+
+	.cardpizza__span---price {
+	}
+
+	.cardpizza__div--buttons {
+	}
+
+	.cardpizza__button {
+	}
+
+	.footer {
+	}
+
+	.footer__p {
+	}
+
+	.footer__p--title {
+	}
+}
+
+@media (min-width: 1200px) {
+	.navbar {
+	}
+
+	.navbar__a {
+	}
+
+	.navbar__menu {
+	}
+
+	.navbar__ul {
+	}
+
+	.navbar__li {
+	}
+
+	.navbar__a--link {
+	}
+
+	.navbar__i {
+	}
+
+	.navbar__a--cart {
+	}
+
+	.header {
+	}
+
+	.header__figure {
+	}
+
+	.header__img {
+	}
+
+	.header__figcaption {
+	}
+
+	.header__h1 {
+	}
+
+	.header__p {
+	}
+
+	.header__hr {
+	}
+
+	.cardpizza {
+		min-height: 30em;
+	}
+
+	.cardpizza__div--container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.cardpizza__article {
+	}
+
+	.cardpizza__div {
+	}
+
+	.cardpizza__img {
+	}
+
+	.cardpizza__header {
+	}
+
+	.cardpizza__h3 {
+	}
+
+	.cardpizza__hr--title {
+	}
+
+	.cardpizza__p {
+	}
+
+	.cardpizza__span {
+	}
+
+	.cardpizza__hr--ingredients {
+	}
+
+	.cardpizza__footer {
+	}
+
+	.cardpizza__h4 {
+	}
+
+	.cardpizza__span---price {
+	}
+
+	.cardpizza__div--buttons {
+	}
+
+	.cardpizza__button {
+	}
+
+	.footer {
+	}
+
+	.footer__p {
+	}
+
+	.footer__p--title {
+	}
+}
+
+@media (min-width: 1400px) {
+	.navbar {
+	}
+
+	.navbar__a {
+	}
+
+	.navbar__menu {
+	}
+
+	.navbar__ul {
+	}
+
+	.navbar__li {
+	}
+
+	.navbar__a--link {
+	}
+
+	.navbar__i {
+	}
+
+	.navbar__a--cart {
+	}
+
+	.header {
+	}
+
+	.header__figure {
+	}
+
+	.header__img {
+	}
+
+	.header__figcaption {
+	}
+
+	.header__h1 {
+	}
+
+	.header__p {
+	}
+
+	.header__hr {
+	}
+
+	.cardpizza {
+	}
+
+	.cardpizza__div--container {
+	}
+
+	.cardpizza__article {
+	}
+
+	.cardpizza__div {
+	}
+
+	.cardpizza__img {
+	}
+
+	.cardpizza__header {
+	}
+
+	.cardpizza__h3 {
+	}
+
+	.cardpizza__hr--title {
+	}
+
+	.cardpizza__p {
+	}
+
+	.cardpizza__span {
+	}
+
+	.cardpizza__hr--ingredients {
+	}
+
+	.cardpizza__footer {
+	}
+
+	.cardpizza__h4 {
+	}
+
+	.cardpizza__span---price {
+	}
+
+	.cardpizza__div--buttons {
+	}
+
+	.cardpizza__button {
+	}
+
+	.footer {
+	}
+
+	.footer__p {
+	}
+
+	.footer__p--title {
+	}
+}

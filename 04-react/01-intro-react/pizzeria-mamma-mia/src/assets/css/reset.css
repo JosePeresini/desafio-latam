@@ -12,7 +12,6 @@
 	/* Main Colors */
 	--blue-color: #1649ff;
 	--blue-light-color: #09f;
-	--red-color: #db0f0f;
 
 	/* Secondary Colors */
 	--light-gray-color: #a9a9a9;
@@ -186,8 +185,8 @@ svg {
 } */
 /* We set the typography for the whole web */
 body {
-	background-color: var(--dark-color);
-	color: var(--white-color);
+	background-color: var(--white-color);
+	color: var(--black-color);
 	font-family: var(--typography-common);
 	font-size: 100%;
 

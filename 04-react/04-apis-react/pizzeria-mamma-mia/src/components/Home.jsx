@@ -1,0 +1,67 @@
+import { useEffect, useState } from "react";
+
+import CardPizza from "./CardPizza";
+import Header from "./Header";
+// import { pizzas } from "../assets/js/pizzas";
+
+const Home = () => {
+	const [info, setInfo] = useState([]);
+
+	useEffect(() => {
+		dataPizza();
+	}, []);
+
+	const dataPizza = async () => {
+		const url = "http://localhost:5000/api/pizzas";
+		const resp = await fetch(url);
+		const data = await resp.json();
+		setInfo(data);
+	};
+
+	return (
+		<>
+			<Header />
+			<section className="cardpizza">
+				<div className="cardpizza__div--container">
+					{
+						/* <CardPizza
+							name="Napolitana"
+							price={5950}
+							ingredients={["mozzarella", "tomates", "jamón", "orégano"]}
+							img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.co
+							m/o/pizzeria%2Fpizza-1239077_640_cl.jpg?alt=media&token=6a9a33da-5c00-49d4-9
+							080-784dcc87ec2c"
+						/>
+						<CardPizza
+							name="Española"
+							price={6950}
+							ingredients={["mozzarella", "gorgonzola", "parmesano", "provolone"]}
+							img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.co
+							m/o/pizzeria%2Fcheese-164872_640_com.jpg?alt=media&token=18b2b821-4d0d-43f2-
+							a1c6-8c57bc388fab"
+						/>
+						<CardPizza
+							name="Pepperoni"
+							price={6950}
+							ingredients={["mozzarella", "pepperoni", "orégano"]}
+							img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.co
+							m/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040-
+							ac54-90f6c31eb3e3"
+						/> */
+						info.map((pizza) => (
+							<CardPizza
+								key={pizza.id}
+								name={pizza.name}
+								price={pizza.price}
+								ingredients={pizza.ingredients}
+								img={pizza.img}
+							/>
+						))
+					}
+				</div>
+			</section>
+		</>
+	);
+};
+
+export default Home;

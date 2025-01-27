@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 	const total = 25.0;
 	const token = false;
@@ -12,14 +14,14 @@ const Navbar = () => {
 			</menu>
 			<ul className="navbar__ul">
 				<li className="navbar__li">
-					<a className="navbar__a--link" href="">
+					<Link to="/" className="navbar__a--link" href="">
 						🍕 Home
-					</a>
+					</Link>
 				</li>
 				<li className="navbar__li">
-					<a className="navbar__a--link" href="">
+					<Link to="/profile" className="navbar__a--link" href="">
 						🔓 Profile
-					</a>
+					</Link>
 				</li>
 				<li className="navbar__li">
 					<a className="navbar__a--link" href="">
@@ -27,19 +29,19 @@ const Navbar = () => {
 					</a>
 				</li>
 				<li className="navbar__li">
-					<a className="navbar__a--link" href="">
+					<Link to="/login" className="navbar__a--link" href="">
 						🔐 Login
-					</a>
+					</Link>
 				</li>
 				<li className="navbar__li">
-					<a className="navbar__a--link" href="">
+					<Link to="/register" className="navbar__a--link" href="">
 						🔐 Register
-					</a>
+					</Link>
 				</li>
 			</ul>
-			<a className="navbar__a--cart" href="#">
+			<Link to={"/cart"} className="navbar__a--cart" href="#">
 				🛒 Total: 25.000
-			</a>
+			</Link>
 		</nav>
 	);
 };

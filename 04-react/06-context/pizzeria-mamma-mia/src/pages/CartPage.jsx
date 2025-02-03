@@ -1,31 +1,9 @@
-import { pizzaCart } from "../assets/js/pizzas";
-import { useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 const Cart = () => {
-	const [cart, setCart] = useState(pizzaCart);
-
-	const increaseCount = (id) => {
-		setCart((prevCart) =>
-			prevCart.map((item) =>
-				item.id === id ? { ...item, count: item.count + 1 } : item
-			)
-		);
-	};
-
-	const decreaseCount = (id) => {
-		setCart((prevCart) =>
-			prevCart
-				.map((item) =>
-					item.id === id ? { ...item, count: item.count - 1 } : item
-				)
-				.filter((item) => item.count > 0)
-		);
-	};
-
-	const totalPrice = cart.reduce(
-		(total, item) => total + item.price * item.count,
-		0
-	);
+	const { cart, increaseCount, decreaseCount, totalPrice } =
+		useContext(CartContext);
 
 	return (
 		<>

@@ -1,4 +1,9 @@
-const CardPizza = ({ img, ingredients, name, price }) => {
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+
+const CardPizza = ({ img, ingredients, name, price, id }) => {
+	const { addToCart } = useContext(CartContext);
+
 	return (
 		<article className="cardpizza__article">
 			<div className="cardpizza__div">
@@ -26,7 +31,12 @@ const CardPizza = ({ img, ingredients, name, price }) => {
 				</h4>
 				<div className="cardpizza__div--buttons">
 					<button className="cardpizza__button">Ver Más 👀</button>
-					<button className="cardpizza__button">Añadir 🛒</button>
+					<button
+						className="cardpizza__button"
+						onClick={() => addToCart({ id, name, price, img, ingredients })}
+					>
+						Añadir 🛒
+					</button>
 				</div>
 			</footer>
 		</article>

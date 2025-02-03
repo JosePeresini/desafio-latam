@@ -4,11 +4,10 @@
 	background-color: var(--dark-color);
 	min-height: 6em;
 	width: 100%;
-
+	height: 6em;
 	align-items: center;
 	display: flex;
 	justify-content: space-around;
-
 	grid-area: navbar;
 }
 
@@ -50,7 +49,6 @@
 	font-size: 1.3rem;
 	padding: 0.3em;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-
 	display: none;
 }
 
@@ -61,19 +59,16 @@
 
 .header {
 	background-color: var(--dark-color);
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-
 	grid-area: header;
 }
 
 .header__figure {
 	min-height: 100%;
 	position: relative;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -97,7 +92,6 @@
 
 .header__figcaption {
 	position: absolute;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -120,12 +114,10 @@
 	margin: 3em auto;
 	max-width: 95%;
 	min-height: 100em;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-
 	grid-area: home;
 }
 
@@ -144,7 +136,6 @@
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
 	max-width: 95%;
 	padding: 3%;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -181,7 +172,6 @@
 	font-size: 1.1rem;
 	min-height: 8em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -199,7 +189,6 @@
 
 .cardpizza__footer {
 	min-height: 6em;
-
 	display: flex;
 	flex-direction: column;
 	gap: 2em;
@@ -247,22 +236,19 @@
 .register {
 	background-color: var(--light-gray-color);
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	grid-area: register;
 }
 
 .register__fieldset {
-	background-color: var(--dark-color);
+	background-color: var (--dark-color);
 	border-radius: 0.5em;
 	max-width: 28em;
 	min-height: 27em;
 	width: 90%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -275,7 +261,6 @@
 	letter-spacing: 2px;
 	min-height: 4em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -285,7 +270,6 @@
 .register__div {
 	min-height: 6em;
 	width: 90%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -295,7 +279,6 @@
 .register__div--button {
 	min-height: 6em;
 	width: 90%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -307,7 +290,6 @@
 	letter-spacing: 1.5px;
 	min-height: 3em;
 	width: 98%;
-
 	align-items: start;
 	display: flex;
 	flex-direction: column;
@@ -350,12 +332,10 @@
 .login {
 	background-color: var(--light-gray-color);
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	grid-area: login;
 }
 
@@ -365,7 +345,6 @@
 	max-width: 28em;
 	min-height: 20.5em;
 	width: 90%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -377,7 +356,6 @@
 	color: var(--white-color);
 	min-height: 4em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -387,7 +365,6 @@
 .login__div {
 	min-height: 6em;
 	width: 90%;
-
 	align-items: start;
 	display: flex;
 	flex-direction: column;
@@ -397,7 +374,6 @@
 .login__div--button {
 	min-height: 6em;
 	width: 90%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -408,7 +384,6 @@
 	color: var(--white-color);
 	min-height: 3em;
 	width: 98%;
-
 	align-items: start;
 	display: flex;
 	flex-direction: column;
@@ -419,7 +394,7 @@
 	background-color: var(--white-color);
 	border-radius: 0.3em;
 	box-shadow: 12px 4px 12px rgba(0, 0, 0, 0.9) inset;
-	color: var(--black-color);
+	color: var (--black-color);
 	min-height: 3em;
 	outline: none;
 	padding: 0.5em 1.3em;
@@ -456,14 +431,11 @@
 	max-height: 70em;
 	padding: 1em 0;
 	transition: height 0.3s ease-in-out;
-
 	overflow: hidden;
 	width: 90%;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-
 	grid-area: cart;
 }
 
@@ -474,7 +446,6 @@
 
 .cart__article {
 	padding-top: 1em;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -484,7 +455,6 @@
 .cart__header {
 	min-height: 10em;
 	width: 10em;
-
 	display: flex;
 	flex-direction: column;
 	row-gap: 1em;
@@ -522,7 +492,6 @@
 	height: 2em;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 	width: 2em;
-
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -553,7 +522,6 @@
 
 .total {
 	min-height: 7em;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -562,7 +530,6 @@
 
 .total__p {
 	font-size: var(--font-size-xxl);
-
 	align-items: center;
 	display: flex;
 	gap: 1em;
@@ -593,12 +560,10 @@
 	margin: 0 auto;
 	min-height: 45em;
 	width: 90%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	grid-area: pizza;
 }
 
@@ -609,7 +574,6 @@
 	min-height: 42em;
 	max-width: 40em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -618,7 +582,6 @@
 
 .pizza__header {
 	width: 85%;
-
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
@@ -639,7 +602,6 @@
 	font-size: var(--font-size-md);
 	font-weight: 600;
 	width: 85%;
-
 	display: flex;
 	flex-direction: column;
 }
@@ -652,7 +614,6 @@
 .pizza__footer {
 	min-height: 30em;
 	max-width: 85%;
-
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
@@ -662,7 +623,6 @@
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
-
 	display: none;
 }
 
@@ -679,7 +639,6 @@
 .profile {
 	min-height: 40em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -691,7 +650,6 @@
 	border-radius: 0.3em;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
 	min-height: 30em;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -722,7 +680,6 @@
 	transition: background-color 0.3s ease-in-out;
 	max-width: 12em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -738,7 +695,6 @@
 	background-color: var(--light-gray-color);
 	min-height: 40em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -748,7 +704,6 @@
 .notfound__div {
 	min-height: 20em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -757,7 +712,6 @@
 
 .notfound__h2 {
 	position: relative;
-
 	align-items: center;
 	display: flex;
 }
@@ -798,13 +752,12 @@
 	background-color: var(--blue-color);
 	border: var(--blue-color) solid 0.2em;
 	border-radius: 0.3em;
-	color: var(--white-color);
+	color: var (--white-color);
 	font-size: var(--font-size-md);
 	height: 3em;
 	transition: background-color 0.3s ease-in-out;
 	max-width: 12em;
 	width: 100%;
-
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -819,12 +772,10 @@
 .footer {
 	background-color: var(--dark-color);
 	min-height: 8em;
-
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	grid-area: footer;
 }
 
@@ -843,6 +794,7 @@
 
 @media (min-width: 768px) {
 	.navbar {
+		height: 6em;
 	}
 
 	.navbar__a {
@@ -952,13 +904,11 @@
 		min-height: 10em;
 		padding: 0 4em;
 		width: 100%;
-
 		flex-direction: row;
 	}
 
 	.cart__header {
 		width: 100%;
-
 		align-items: center;
 		display: grid;
 		gap: 1em;
@@ -973,7 +923,6 @@
 	.cart__img {
 		height: 8em;
 		width: 8em;
-
 		grid-area: cartIMG;
 	}
 
@@ -1013,6 +962,7 @@
 
 @media (min-width: 992px) {
 	.navbar {
+		height: 6em;
 	}
 
 	.navbar__a {
@@ -1170,21 +1120,15 @@
 		min-height: 28em;
 		padding: 1.3em;
 		width: 100%;
-
 		display: grid;
-		grid-template-areas:
-			"pizzaHeader pizzaImg"
-			"pizzaIng pizzaImg"
-			"pizzaDesc pizzaImg";
+		grid-template-areas: "pizzaHeader pizzaImg" "pizzaIng pizzaImg" "pizzaDesc pizzaImg";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
 
 	.pizza__header {
 		max-width: 90%;
-
 		align-items: start;
-
 		grid-area: pizzaHeader;
 	}
 
@@ -1198,7 +1142,6 @@
 	.pizza__p {
 		font-size: var(--font-size-sm);
 		width: 100%;
-
 		grid-area: pizzaIng;
 	}
 
@@ -1211,7 +1154,6 @@
 
 	.pizza__img {
 		display: block;
-
 		grid-area: pizzaImg;
 	}
 
@@ -1221,7 +1163,6 @@
 
 	.pizza__p--desc {
 		font-size: var(--font-size-sm);
-
 		grid-area: pizzaDesc;
 	}
 
@@ -1237,6 +1178,7 @@
 
 @media (min-width: 1200px) {
 	.navbar {
+		height: 6em;
 	}
 
 	.navbar__a {
@@ -1343,6 +1285,7 @@
 
 @media (min-width: 1400px) {
 	.navbar {
+		height: 6em;
 	}
 
 	.navbar__a {

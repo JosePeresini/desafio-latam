@@ -24,8 +24,8 @@ const CardPizza = ({ img, ingredients, name, price, id }) => {
 						</span>
 					))}
 				</span>
-				<hr className="cardpizza__hr--ingredients" />
 			</p>
+			<hr className="cardpizza__hr--ingredients" />
 			<footer className="cardpizza__footer">
 				<h4 className="cardpizza__h4">
 					Precio: <span className="cardpizza__span--price">${price}</span>

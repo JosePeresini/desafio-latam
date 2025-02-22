@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import CartProvider from "./context/CartContext";
+import { UserProvider } from "./context/UserContext";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -14,7 +15,6 @@ import NotFound from "./pages/NotFound";
 import PizzaPage from "./pages/PizzaPage";
 
 import "./assets/css/App.css";
-import UserProvider from "./context/UserContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 

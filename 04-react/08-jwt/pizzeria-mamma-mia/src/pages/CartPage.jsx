@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { UserContext } from "../context/UserContext";
 
@@ -6,6 +6,24 @@ const Cart = () => {
 	const { cart, increaseCount, decreaseCount, totalPrice } =
 		useContext(CartContext);
 	const { token } = useContext(UserContext);
+	const [message, setMessage] = useState("");
+
+	const handleCheckout = async () => {
+		const response = await fetch("http://localhost:5000/api/checkouts", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				Authorization: `Bearer ${token}`,
+			},
+			body: JSON.stringify({ cart }),
+		});
+		const data = await response.json();
+		if (response.ok) {
+			setMessage("Compra realizada con éxito");
+		} else {
+			setMessage("Error al realizar la compra: " + data.message);
+		}
+	};
 
 	return (
 		<>
@@ -39,9 +57,14 @@ const Cart = () => {
 					<p className="total__p">
 						Total<span className="total__span">${totalPrice}</span>
 					</p>
-					<button className="total__button" disabled={!token}>
+					<button
+						className="total__button"
+						disabled={!token}
+						onClick={handleCheckout}
+					>
 						Pagar
 					</button>
+					{message && <p>{message}</p>}
 				</article>
 			</section>
 		</>

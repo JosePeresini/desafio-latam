@@ -1,4 +1,15 @@
+import { useContext, useEffect } from "react";
+import { UserContext } from "../context/UserContext";
+
 const Profile = () => {
+	const { email, getProfile, logout, token } = useContext(UserContext);
+
+	useEffect(() => {
+		if (token) {
+			getProfile();
+		}
+	}, [token]);
+
 	return (
 		<>
 			<section className="profile">
@@ -8,9 +19,9 @@ const Profile = () => {
 						alt="User Profile"
 						className="profile__img"
 					/>
-					<p className="profile__p">mail@mail.com</p>
+					<p className="profile__p">{email}</p>
 				</div>
-				<a href="#" className="profile__a">
+				<a href="#" className="profile__a" onClick={logout}>
 					Cerrar Sesión
 				</a>
 			</section>

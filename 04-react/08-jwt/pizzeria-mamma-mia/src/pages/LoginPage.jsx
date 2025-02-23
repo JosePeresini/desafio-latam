@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { UserContext } from "../context/UserContext";
 
 const Login = () => {
+	const { login } = useContext(UserContext);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [message, setMessage] = useState("");
 
-	const handleSubmit = (event) => {
+	const handleSubmit = async (event) => {
 		event.preventDefault();
 
 		if (email === "" || password === "") {
@@ -18,6 +20,7 @@ const Login = () => {
 			return;
 		}
 
+		await login(email, password);
 		setMessage("Inicio de sesión exitoso!");
 	};
 
@@ -38,6 +41,7 @@ const Login = () => {
 							placeholder="mail@mail.com"
 							required
 							type="email"
+							value={email}
 						/>
 					</div>
 					<div className="login__div">
@@ -52,6 +56,7 @@ const Login = () => {
 							placeholder="Introduce tu contraseña"
 							required
 							type="password"
+							value={password}
 						/>
 					</div>
 					<div className="login__div--button">

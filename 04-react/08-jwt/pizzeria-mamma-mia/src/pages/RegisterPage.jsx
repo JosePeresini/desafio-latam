@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { UserContext } from "../context/UserContext";
 
 const Register = () => {
+	const { register } = useContext(UserContext);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 	const [message, setMessage] = useState("");
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
 		if (email === "" || password === "" || confirmPassword === "") {
@@ -24,6 +26,7 @@ const Register = () => {
 			return;
 		}
 
+		await register(email, password);
 		setMessage("Registro exitoso!");
 	};
 
